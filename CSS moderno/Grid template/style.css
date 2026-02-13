@@ -1,0 +1,40 @@
+body {
+  background-color: #020202;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: minmax(8rem, 16rem) minmax(12rem, 1fr) minmax(
+      4rem,
+      16rem
+    );
+  grid-template-rows: 6rem 1fr 4rem 6rem;
+}
+
+.grid-item {
+  background-color: #125628;
+  padding: 1rem;
+}
+
+.header {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.sidebar {
+  grid-column: 1;
+  grid-row: 2/5;
+}
+.main {
+  grid-column: 2/4;
+  grid-row: 2;
+}
+.footer {
+  grid-column: span 2;
+  grid-row: 4;
+}

@@ -1,0 +1,31 @@
+body {
+  background-color: grey;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.box {
+  background-color: deepskyblue;
+  border: 2px solid black;
+  height: 10rem;
+  width: 10rem;
+}
+
+.box.red {
+  background-color: red;
+  flex-basis: 15rem;
+}
+
+.box.yellow {
+  background-color: yellow;
+  height: 20rem;
+}
+
+.box.blue {
+  background-color: blue;
+  height: 15rem;
+}

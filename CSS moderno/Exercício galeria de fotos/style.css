@@ -1,0 +1,23 @@
+body {
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body h1 {
+  align-self: center;
+}
+
+.galery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.125rem;
+}
+
+.galery img {
+  max-height: 12rem;
+  object-fit: fill;
+  aspect-ratio: 16/9;
+  flex: 1 1 10rem;
+}
