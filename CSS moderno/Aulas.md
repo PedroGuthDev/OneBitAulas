@@ -71,4 +71,28 @@ Exemplo:   grid-template-areas:
     "sidebar   conteudo  conteudo  conteudo"
     "rodape    rodape    rodape    rodape";
 ```
+
 Precisa ser trabalhado com a mesma quantidades de colunas em cada linha, caso contrário não funciona.
+
+# Aula 10. Media queries
+
+É um recurso do css que permite termos regras que respeitam condições impostas, como por exemplo dispositivo e tema do dispositivo. O objetivo é tornar o design responsivo, adaptável a diferentes tipos de telas
+Conceitos básicos:
+
+1. Viewport: área visível da página dem um despositivo
+2. Responsividade: capacidade da página se adapatar a diferentes tamanhos de tela.
+3. Unidades relativas: unidades como %, em, rem, vw(viewport widht) e vh(viewport height) ajudam a criar sites responsivos.
+
+Sintaxe básica: @media (condição) {/_ estilos aplicados quando a condição for verdadeira_/}
+Exemplo: @media (max-width: 600px) {body{background-color: #4c6daf}}
+
+Tipos mais comuns:
+
+1. max-width e min-width: max aplica o estilo caso a largura for menor ou igual, a min aplica caso seja maior ou igual.
+2. orientation: controla a orientação da tela(paisagem ou retrato).
+3. screen: aplica os estilos apenas quando a página for visualizada em uma tela.
+
+Melhores práticas:
+1. Mobile first: filosofia de desenvolvimento que prioriza desenvolver o site para celular primeiro, posteriormente adaptando para um layout horizontal.
+2. Uso consciente de breakpoints: 480px para smartphones, 768px para tablets e 1024px para notebooks e 1440px para telas maiores, esses são os breakpoints mais utilizados.
+3. Não exagerar nas media queries: mantenha as MQ simples e claras, para facilitar futura manutenção no código.

@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-background: #333;
+  --color-background-secundary: #444;
+  --color-text-primary: #fff;
+  --font-size-small-device: 1rem;
+  --font-size-medium-device: 1.25rem;
+  --font-size-big-device: 1.5rem;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  display: grid;
+  font-size: 1rem;
+}
+
+header {
+  background-color: var(--color-background-secundary);
+  padding: 1rem;
+  font-size: var(--font-size-small-device);
+  font-weight: 700;
+}
+
+.logo {
+  font-size: var(--font-size-medium-device);
+}
+.menu a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu li {
+  margin-top: 1rem;
+}
+
+main {
+  padding: 1rem;
+  font-size: var(--font-size-small-device);
+}
+
+section {
+  display: grid;
+  gap: 1rem;
+}
+
+section h1 {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 48rem /*768px*/) {
+  body {
+    font-size: var(--font-size-medium-device);
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    gap: 1rem;
+  }
+  .menu li {
+    margin-top: 0;
+  }
+  main {
+    padding: 2rem 8rem;
+    font-size: var(--font-size-medium-device);
+  }
+}
+@media screen and (min-width: 90rem /*1440px*/) {
+  main,
+  header,
+  .logo {
+    font-size: var(--font-size-big-device);
+  }
+  .navbar {
+    padding: 0.5rem 5rem;
+  }
+}

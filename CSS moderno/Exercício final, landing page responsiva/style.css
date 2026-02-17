@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --background-color-primary: var(--background-dark);
+  --background-color-secundary: var(--background-black);
+  --text-color: var(--text-color-white);
+  --color-primary: #6c63ff;
+  --text-color-white: #fff;
+  --text-color-black: #000;
+  --background-light: #e0e0e0;
+  --background-white: #ffffff;
+  --background-dark: #2c2c2e;
+  --background-black: #070707;
+  --font-size-sm: 0.8rem;
+  --font-size-medium: 1.1rem;
+}
+
+body {
+  font-size: var(--font-size-medium);
+  background-color: var(--background-color-primary);
+  color: var(--text-color);
+  display: grid;
+}
+p {
+  font-size: var(--font-size-sm);
+}
+h3 {
+  font-size: var(--font-size-medium);
+}
+
+input {
+  background-color: var(--background-color-secundary);
+  color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.hero {
+  background-image: url("./imagens/pexels-bertellifotografia-3321797.webp");
+  min-height: 35rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: grid;
+  place-content: center center;
+}
+.hero-content {
+  padding: 1rem;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-shadow: 1px 2px var(--text-color-black);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  max-width: 10rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  font-weight: 700;
+  justify-self: center;
+  border-style: none;
+  font-size: var(--font-size-medium);
+}
+.speakers {
+  text-align: center;
+  padding: 2rem 0;
+}
+.speakers h2 {
+  margin-bottom: 1rem;
+}
+
+.speakers-grid {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.speaker-card {
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: minmax(10rem, 30rem);
+  justify-items: center;
+  gap: 1rem;
+  background-color: var(--background-color-secundary);
+}
+
+.speaker-card img {
+  border-radius: 10rem;
+}
+
+.schedule {
+  text-align: center;
+}
+
+.schedule-grid {
+  justify-content: center;
+
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  padding: 0rem 1rem;
+  grid-template-columns: minmax(10rem, 30rem);
+}
+.schedule-item {
+  text-align: left;
+  background-color: var(--background-color-secundary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  line-height: 1.6;
+  display: grid;
+}
+
+.newsletter-grid {
+  justify-content: center;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: minmax(10rem, 30rem);
+}
+.newsletter-image img {
+  width: 100%;
+}
+.newsletter-text {
+  line-height: 1.6;
+  text-align: center;
+  display: grid;
+
+  gap: 1rem;
+}
+.newsletter-text p {
+  color: #777;
+}
+
+.newsletter-form {
+  display: grid;
+  gap: 1rem;
+}
+.form-group {
+  display: grid;
+}
+
+.footer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(10rem, 30rem);
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    min-height: 45rem;
+  }
+  .speakers-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .speakers,
+  .schedule,
+  .newsletter {
+    padding: 1rem 4rem;
+  }
+  .schedule-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .newsletter-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .newsletter-text {
+    place-content: center start;
+    justify-items: start;
+    text-align: left;
+    grid-template-rows: max-content max-content max-content;
+  }
+  .newsletter-form {
+    grid-template-columns: minmax(20rem, 30rem);
+    gap: 2rem;
+  }
+  .newsletter-form button {
+    justify-self: left;
+    max-height: 3rem;
+  }
+  :root {
+    --font-size-sm: 1.1rem;
+    --font-size-medium: 1.5rem;
+  }
+  .btn {
+    max-width: 15rem;
+  }
+  .newsletter-image {
+    padding: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-primary: var(--background-dark);
+    --background-color-secundary: var(--background-black);
+    --text-color: var(--text-color-white);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color-primary: var(--background-light);
+    --background-color-secundary: var(--background-white);
+    --text-color: var(--text-color-black);
+  }
+  .hero {
+    color: var(--text-color-white);
+  }
+  .hero a {
+    color: var(--text-color-white);
+  }
+}
