@@ -1,0 +1,18 @@
+.bg-padding {
+  padding: 1rem 10rem;
+}
+.hero-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("./Imagens/pexels-kellie-churchman-371878-1001682.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.card-style {
+  min-width: 10rem;
+}
