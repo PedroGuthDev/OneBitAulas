@@ -13,6 +13,30 @@
   color: white;
 }
 
+.hero-section-two {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("./Imagens/pexels-fabianwiktor-994605-1.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
 .card-style {
   min-width: 10rem;
+  min-height: 20rem;
+}
+
+.card-img-center {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.division {
+  margin-top: 4rem;
 }
