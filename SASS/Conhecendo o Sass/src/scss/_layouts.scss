@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+p {
+  margin-top: 0.125rem;
+}
+
+section {
+  padding: $spacing-sm;
+}
+
+.container {
+  padding: $spacing-sm $spacing-lg;
+
+  p {
+    margin-top: $spacing-sm;
+  }
+}
+
+.container {
+  padding: $spacing-sm $spacing-lg;
+
+  p {
+    margin-top: $spacing-sm * 2;
+  }
+}

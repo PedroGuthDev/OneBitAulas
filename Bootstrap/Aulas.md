@@ -236,6 +236,4 @@ npm start
 10. o d-flex ou d-grid aplica o display grid ao elemento, possibilitando o uso de classes como justify-content-between
 11. Existem classes para responsividade, exemplo d-md-none d é display, md é o tamanho da tela e depois o display que vai ser aplicado, nesse caso o elemento desaparece
 
-# Aula 4. Componentes do Bootstrap
-
-1. 
+# Aula 4. Customizando o bootstrap com o sass

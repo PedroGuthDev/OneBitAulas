@@ -1,0 +1,56 @@
+.spacing {
+  padding: 1.25rem;
+}
+
+.post-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.input-radius {
+  border-radius: 0.75rem;
+}
+
+.post-img-profile {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+@include media-breakpoint-up(xl) {
+  section,
+  main,
+  footer,
+  header .navbar {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  body,
+  .btn,
+  .navbar-brand,
+  .nav-link,
+  .dropdown-item,
+  .card-title,
+  .form-control {
+    font-size: 1.5rem;
+  }
+  .post-img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .post-img-profile {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.carousel-item img {
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
