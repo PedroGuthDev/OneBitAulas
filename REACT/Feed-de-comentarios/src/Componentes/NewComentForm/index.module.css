@@ -1,0 +1,39 @@
+.comentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 1rem;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formItem input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.formItem textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.comentForm button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #0e0c0c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.comentForm button:hover {
+  background-color: #2c2c2c;
+  color: #fff;
+}

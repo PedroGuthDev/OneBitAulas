@@ -1,0 +1,8 @@
+.container {
+  display: grid;
+  background-color: #c4b3b3;
+  padding: 2rem;
+  width: 30rem;
+  margin: 0 auto;
+  border-radius: 0.75rem;
+}

@@ -1,0 +1,15 @@
+.card {
+  background-color: #999;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+  border-radius: 1rem;
+  width: 30rem;
+}
+
+.cardImg {
+  width: 10rem;
+  height: 15rem;
+  border: 0.5rem solid #000;
+}

@@ -1,0 +1,11 @@
+.borderDiv {
+  border: 1px solid #00d9ff;
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+}
+
+.borderDiv p {
+  margin: 0;
+  font-size: 1rem;
+}
