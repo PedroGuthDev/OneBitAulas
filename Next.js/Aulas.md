@@ -56,4 +56,7 @@ O Next aceita diversas formas de estilização:
 Os componentes do Next.js são por padrão Server Components, mas podem ser transformados em Client Components utilizando a diretiva 'use client' no topo do arquivo.
 Algumas bibliotecas trabalham com JS imbutido, para conseguir usar esses recursos é necessário um client component.
 
-Para otimizar imagens utilizamos um componente do Next chamado Image.
+Para otimizar imagens utilizamos um componente do Next chamado Image. Esse componente reserva o espaço da imagem no layout, para casos de conexão lenta não ter alterações após o carregamento, além de otimizar a qualidade da imagem.
+
+É possível adicionar fontes locais e remotas ao projeto, podendo importar de um arquivo local e salvar como variável.
+Para utilizar fontes personalizadas em conjunto com bibliotecas como RadixUi precisa configurar conforme a documentação da biblioteca.

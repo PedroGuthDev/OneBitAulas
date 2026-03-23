@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card, Box, Heading } from "@radix-ui/themes";
 
+
 export default function Home() {
   return (
     <div>
