@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         path: "/products/:id",
         element: <Product />,
         loader: loadProduct,
-        ErrorBoundary: ProductBoundarie
+        errorElement: <ProductBoundarie />,
       },
       {
         path: "/cart",
