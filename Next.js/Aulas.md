@@ -60,3 +60,21 @@ Para otimizar imagens utilizamos um componente do Next chamado Image. Esse compo
 
 É possível adicionar fontes locais e remotas ao projeto, podendo importar de um arquivo local e salvar como variável.
 Para utilizar fontes personalizadas em conjunto com bibliotecas como RadixUi precisa configurar conforme a documentação da biblioteca.
+
+### Aula 4 - Entendendo o roteamento no Next.js
+
+O Next.js utiliza um sistema de roteamento baseado no sistema de arquivos. Para criar uma rota, basta criar um arquivo na pasta app.
+Existem alguns arquivos especiais que podem ser criados dentro de uma rota para configurar o layout, carregamento e tratamento de erros:
+- layout.tsx: Define o layout da rota.
+- page.tsx: Define a página da rota.
+- loading.tsx: Define o estado de carregamento da rota.
+- error.tsx: Define o tratamento de erros da rota.
+- template.tsx: Define o template da rota.
+- not-found.tsx: Define a página de não encontrada da rota.
+- default.tsx: Define a página de não encontrada da rota.
+
+Para rotas aninhadas, basta criar uma pasta dentro da pasta app. Por exemplo, para criar uma rota aninhada em /dashboard, basta criar uma pasta chamada dashboard dentro da pasta app. Lembrando que dentro de cada diretório deve haver um arquivo page.tsx para que a rota seja renderizada.
+
+Para rotas dinâmicas, basta criar uma pasta dentro da pasta app com colchetes, por exemplo, [id].tsx. 
+
+O arquivo layout define um layout para todas as rotas subsequentes, ou seja, para todas as rotas que estão dentro da pasta onde o arquivo layout está localizado. Por exemplo, se o arquivo layout estiver localizado na pasta app, ele definirá um layout para todas as rotas do projeto. Se o arquivo layout estiver localizado na pasta app/dashboard, ele definirá um layout apenas para as rotas que estão dentro da pasta app/dashboard.
