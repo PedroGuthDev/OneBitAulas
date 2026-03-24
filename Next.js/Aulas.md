@@ -5,11 +5,13 @@
 ### Aula 1 - Conhecendo o Next.js
 
 O que é o Next.js?
+
 - É um framework para construir aplicações full-stack
 - Utiliza React como biblioteca para a interface (UI)
 - Contem recursos que trazem otimizações e funcionalidades de backend.
 
 Por que usar o Next ao invés de React + Vite?
+
 - Maior produtividade, com muitos recursos necessários já inclusos e pré-configurador, como o roteador e o sistema de layouts
 - Possui forma de otimizar o carregamento de imagens, fontes, scripts e outros recursos.
 - Possibilidade trabalhar com os React Server Components com mais facilidade.
@@ -20,33 +22,36 @@ Por que usar o Next ao invés de React + Vite?
 ### Aula 2 - Principais recursos do Next.js
 
 Renderização
+
 - Suporte a renderização Client-side e Server-side.
 - Geração de sites estáticos e dinâmicos, além de suporte a streaming de componentes.
-Roteamento
+  Roteamento
 - Rotas baseadas no sistema de arquivos.
 - Suporta rotas dinâmicas.
 - Suporta os Server Components.
 - Poderoso sistema de layouts.
 - Rotas aninhadas, estados de carregamento, tratamento de erros, etc.
-Fetching de Dados
+  Fetching de Dados
 - Uso de Server Components para simplificar as requisições (componentes async)
 - Método fecth otimizado para trabalhar com memorização, caching e revalidação.
-Otimizações
+  Otimizações
 - Otimização automática de imagens, fontes, formulários e scripts, melhorando a pontuação de Core Web Vitals.
-Estilização
+  Estilização
 - Suporte a CSS Modules, Tailwind CSS, Sass, CSS-in-JS, etc.
 - Vem pré-configurado com Tailwind CSS.
-TypeScript
+  TypeScript
 - Suporte avançado com tipagem estática e verificação de tipos em tempo de desenvolvimento.
 
 ### Aula 3 - Primeiro projeto
 
 Para inicializar um projeto Next.js, utilize o comando:
+
 ```bash
 npx create-next-app@latest
 ```
 
 O Next aceita diversas formas de estilização:
+
 - CSS Modules
 - Tailwind CSS ou Bootstrap
 - Sass
@@ -65,6 +70,7 @@ Para utilizar fontes personalizadas em conjunto com bibliotecas como RadixUi pre
 
 O Next.js utiliza um sistema de roteamento baseado no sistema de arquivos. Para criar uma rota, basta criar um arquivo na pasta app.
 Existem alguns arquivos especiais que podem ser criados dentro de uma rota para configurar o layout, carregamento e tratamento de erros:
+
 - layout.tsx: Define o layout da rota.
 - page.tsx: Define a página da rota.
 - loading.tsx: Define o estado de carregamento da rota.
@@ -75,6 +81,8 @@ Existem alguns arquivos especiais que podem ser criados dentro de uma rota para 
 
 Para rotas aninhadas, basta criar uma pasta dentro da pasta app. Por exemplo, para criar uma rota aninhada em /dashboard, basta criar uma pasta chamada dashboard dentro da pasta app. Lembrando que dentro de cada diretório deve haver um arquivo page.tsx para que a rota seja renderizada.
 
-Para rotas dinâmicas, basta criar uma pasta dentro da pasta app com colchetes, por exemplo, [id].tsx. 
+Para rotas dinâmicas, basta criar uma pasta dentro da pasta app com colchetes, por exemplo, [id].tsx.
 
 O arquivo layout define um layout para todas as rotas subsequentes, ou seja, para todas as rotas que estão dentro da pasta onde o arquivo layout está localizado. Por exemplo, se o arquivo layout estiver localizado na pasta app, ele definirá um layout para todas as rotas do projeto. Se o arquivo layout estiver localizado na pasta app/dashboard, ele definirá um layout apenas para as rotas que estão dentro da pasta app/dashboard.
+
+Pastas que estão com o nome entre parênteses não precisam ser referênciadas na url. Exemplo: app/(site)/blog/page.tsx -> /blog

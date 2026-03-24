@@ -20,7 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body>{children}</body>
+      <body>
+        <header>
+          <div className="site-logo">Universo em Foco</div>
+          <p>
+            Explore o incrível mundo da astronomia e descubra segredos do cosmos
+            através de artigos, imagens e muito mais!
+          </p>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }

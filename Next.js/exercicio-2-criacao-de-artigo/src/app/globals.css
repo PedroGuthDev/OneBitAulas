@@ -47,3 +47,15 @@ a {
     color-scheme: dark;
   }
 }
+
+.site-logo {
+  display: block;
+  font-family: var(--font-playfair-display);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  border-bottom: 1px solid #777;
+  padding: 2rem;
+}
