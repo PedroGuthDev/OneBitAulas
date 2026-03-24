@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -23,10 +24,17 @@ export default function RootLayout({
       <body>
         <header>
           <div className="site-logo">Universo em Foco</div>
-          <p>
-            Explore o incrível mundo da astronomia e descubra segredos do cosmos
-            através de artigos, imagens e muito mais!
-          </p>
+          <div>
+            <p>
+              Explore o incrível mundo da astronomia e descubra segredos do
+              cosmos através de artigos, imagens e muito mais!
+            </p>
+          </div>
+          <nav>
+            <Link href="/">Home</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/loja">Loja</Link>
+          </nav>
         </header>
         {children}
       </body>

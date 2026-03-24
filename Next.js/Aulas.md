@@ -86,3 +86,7 @@ Para rotas dinâmicas, basta criar uma pasta dentro da pasta app com colchetes, 
 O arquivo layout define um layout para todas as rotas subsequentes, ou seja, para todas as rotas que estão dentro da pasta onde o arquivo layout está localizado. Por exemplo, se o arquivo layout estiver localizado na pasta app, ele definirá um layout para todas as rotas do projeto. Se o arquivo layout estiver localizado na pasta app/dashboard, ele definirá um layout apenas para as rotas que estão dentro da pasta app/dashboard.
 
 Pastas que estão com o nome entre parênteses não precisam ser referênciadas na url. Exemplo: app/(site)/blog/page.tsx -> /blog
+
+O Next tem componentes Link embutidos no framework, para fazer a navegação client-side.
+
+Layouts e templates são diferentes. O layout é renderizado uma única vez, enquanto estiver na mesma rota ou em rotas filhas. O template é renderizado toda vez que a rota é acessada, mas em caso de rotas que estão no mesmo nível, o template não é renderizado novamente.
