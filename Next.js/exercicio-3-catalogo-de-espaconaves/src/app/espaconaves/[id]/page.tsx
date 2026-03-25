@@ -16,12 +16,16 @@ export default function Espaconave() {
       {spaceship ? (
         <div className={styles.container}>
           <h1>{spaceship.name}</h1>
-          <Image
-            src={spaceship.imageUrl}
-            alt={spaceship.name}
-            width={800}
-            height={400}
-          />
+          <p className={styles.imageContainer}>
+            <Image
+              src={spaceship.imageUrl}
+              alt={spaceship.name}
+              width={800}
+              height={400}
+              style={{ objectFit: "contain", height: "400px" }}
+            />
+          </p>
+
           <p>{spaceship.category}</p>
           <p>{spaceship.model}</p>
           <p>{spaceship.description}</p>

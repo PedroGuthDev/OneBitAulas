@@ -8,3 +8,8 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}

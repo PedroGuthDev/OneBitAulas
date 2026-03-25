@@ -90,3 +90,6 @@ Pastas que estão com o nome entre parênteses não precisam ser referênciadas 
 O Next tem componentes Link embutidos no framework, para fazer a navegação client-side.
 
 Layouts e templates são diferentes. O layout é renderizado uma única vez, enquanto estiver na mesma rota ou em rotas filhas. O template é renderizado toda vez que a rota é acessada, mas em caso de rotas que estão no mesmo nível, o template não é renderizado novamente.
+
+
+
