@@ -91,5 +91,17 @@ O Next tem componentes Link embutidos no framework, para fazer a navegação cli
 
 Layouts e templates são diferentes. O layout é renderizado uma única vez, enquanto estiver na mesma rota ou em rotas filhas. O template é renderizado toda vez que a rota é acessada, mas em caso de rotas que estão no mesmo nível, o template não é renderizado novamente.
 
+### Aula 5 - Route Handlers
 
+Para utilizar Route Handlers, basta criar um arquivo chamado route.ts dentro de uma rota. 
+É possível criar Route Handlers para métodos GET, POST, PUT, DELETE, etc.
 
+Exemplo:
+
+```typescript
+export async function GET(request: NextRequest) {
+  return NextResponse.json({ message: "Hello, world!" });
+}
+```
+
+Não pode ter uma rota page.tsx e uma route.ts na mesma pasta.
